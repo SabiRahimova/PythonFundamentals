@@ -24,7 +24,7 @@ def Foo():
             print("Düzgün dəyər daxil edilməyib!") 
             
        k=input('davam edilsinmi? No/Yes : ')
-       if k.lower=='no':
+       if k.lower()=='no':
             break
        
 

@@ -33,7 +33,7 @@ def inputEded():
        except ValueError:
             print("Düzgün dəyər daxil edilməyib!") 
        cut=input('davam edilsinmi? No/Yes : ')
-       if cut.lower=="Yes":
+       if cut.lower()=="Yes":
           continue
        else:
            break                   
