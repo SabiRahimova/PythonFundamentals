@@ -13,55 +13,64 @@ cellY=0
 def btnAction():
     
     button1.setText('x')
-    Otext=random.random(button3,button4,button5, button6)   
+    i=random.choice(list)
+    i.setText('o')   
     print('click') 
 
 def btnAction2():
     
     button2.setText('x')
-       
+    i=random.choice(list)
+    i.setText('o')    
     print('click') 
     
 def btnAction3():
     
     button3.setText('x')
-       
+    i=random.choice(list)
+    i.setText('o')    
     print('click')
 
 def btnAction4():
     
     button4.setText('x')
-       
+    i=random.choice(list)
+    i.setText('o')    
     print('click') 
 
 def btnAction5():
     
     button5.setText('x')
-       
+    i=random.choice(list)
+    i.setText('o')    
     print('click') 
 
 def btnAction6():
     
     button6.setText('x')
-       
+    i=random.choice(list)
+    i.setText('o')    
     print('click') 
 
 def btnAction7():
     
     button7.setText('x')
-       
+    i=random.choice(list)
+    i.setText('o')   
     print('click') 
     
 def btnAction8():
     
     button8.setText('x')
-       
+    i=random.choice(list)
+    i.setText('o')    
     print('click')    
     
 def btnAction9():
     
     button9.setText('x')
-       
+    i=random.choice(list)
+    i.setText('o') 
     print('click')   
     
     
@@ -105,8 +114,9 @@ button8.setGeometry(400,200,mainWidth/3,mainHeight/3)
 button9.setGeometry(400,400,mainWidth/3,mainHeight/3)
 
 
+list=[ button1,button2, button3,button4,button5,button6,button7,button8,button9]
+
   
-      
     
        
 main.show()
