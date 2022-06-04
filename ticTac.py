@@ -13,64 +13,110 @@ cellY=0
 def btnAction():
     
     button1.setText('x')
+    button1.setEnabled(False)
     i=random.choice(list)
-    i.setText('o')   
+    while i==button1 or i.setEnabled(False):
+        i=random.choice(list)
+    if i!=button1:
+        i.setText('o')
+        i.setEnabled(False)   
     print('click') 
 
 def btnAction2():
     
     button2.setText('x')
+    button2.setEnabled(False)
     i=random.choice(list)
-    i.setText('o')    
+    while i==button2 or i.setEnabled(False):
+        i=random.choice(list)
+    if i!=button2:
+        i.setText('o')
+        i.setEnabled(False)    
     print('click') 
     
 def btnAction3():
     
     button3.setText('x')
+    button3.setEnabled(False)
     i=random.choice(list)
-    i.setText('o')    
+    while i==button3 or i.setEnabled(False):
+        i=random.choice(list)
+    if i!=button3:
+        i.setText('o')
+        i.setEnabled(False)    
     print('click')
 
 def btnAction4():
     
     button4.setText('x')
+    button4.setEnabled(False)
     i=random.choice(list)
-    i.setText('o')    
+    while i==button4 or i.setEnabled(False):
+        i=random.choice(list)
+    if i!=button4:
+        i.setText('o')
+        i.setEnabled(False)     
     print('click') 
 
 def btnAction5():
     
     button5.setText('x')
+    button5.setEnabled(False)
     i=random.choice(list)
-    i.setText('o')    
+    while i==button5 or i.setEnabled(False):
+        i=random.choice(list)
+    if i!=button5:
+        i.setText('o')
+        i.setEnabled(False)     
     print('click') 
 
 def btnAction6():
     
     button6.setText('x')
+    button6.setEnabled(False)
     i=random.choice(list)
-    i.setText('o')    
+    while i==button6 or i.setEnabled(False):
+        i=random.choice(list)
+    if i!=button6:
+        i.setText('o')
+        i.setEnabled(False)   
     print('click') 
 
 def btnAction7():
     
     button7.setText('x')
+    button7.setEnabled(False)
     i=random.choice(list)
-    i.setText('o')   
+    while i==button7 or i.setEnabled(False):
+        i=random.choice(list)
+    if i!=button7:
+        i.setText('o')
+        i.setEnabled(False) 
     print('click') 
     
 def btnAction8():
     
     button8.setText('x')
+    button8.setEnabled(False)
     i=random.choice(list)
-    i.setText('o')    
+    while i==button8 or i.setEnabled(False):
+        i=random.choice(list)
+    if i!=button8:
+        i.setText('o')
+        i.setEnabled(False)   
     print('click')    
     
 def btnAction9():
     
     button9.setText('x')
+    button9.setEnabled(False)
     i=random.choice(list)
-    i.setText('o') 
+    while i==button9 or i.setEnabled(False):
+        i=random.choice(list)
+    if i!=button9:
+        i.setText('o')
+        i.setEnabled(False)
+    
     print('click')   
     
     
