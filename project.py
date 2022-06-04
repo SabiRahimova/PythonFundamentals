@@ -53,7 +53,7 @@ def DeleteAccount():
     
 
 while True:
-    UserList.append(input())
+    
     
     choise=input('Enter the command: ')
     
@@ -71,3 +71,6 @@ while True:
     
     else:
         print( "The command is not correct, please try your command again" )
+        
+ 
+ 
