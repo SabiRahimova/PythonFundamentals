@@ -6,120 +6,154 @@ app=QApplication()
 main=QMainWindow()
 mainWidth=600
 mainHeight=600
-main.resize(mainWidth,mainHeight)
+main.resize(600,800)
 cellX=0
 cellY=0
-
+btnList=[]
 def btnAction():
-    
-    button1.setText('x')
+    btnList.append(button1)
+    button1.setText('X')
     button1.setEnabled(False)
     i=random.choice(list)
-    while i==button1 or i.setEnabled(False):
-        i=random.choice(list)
-    if i!=button1:
-        i.setText('o')
-        i.setEnabled(False)   
+    while i:
+        if i!=button1 and i!=i.setEnabled(False):
+            i.setText('O')
+            i.setEnabled(False)
+            break 
+        if i==button1 or i==i.setEnabled(False):
+            i=random.choice(list)  
+                
+     
     print('click') 
 
 def btnAction2():
-    
-    button2.setText('x')
+    btnList.append(button2)
+    button2.setText('X')
     button2.setEnabled(False)
     i=random.choice(list)
-    while i==button2 or i.setEnabled(False):
-        i=random.choice(list)
-    if i!=button2:
-        i.setText('o')
-        i.setEnabled(False)    
+    while i:
+       
+        if i==button2 or i==i.setEnabled(False):
+            i=random.choice(list)       
+        if i!=button2 and i!=i.setEnabled(False):
+            i.setText('O')
+            i.setEnabled(False)
+            break 
     print('click') 
     
 def btnAction3():
-    
-    button3.setText('x')
+    btnList.append(button3)
+    button3.setText('X')
     button3.setEnabled(False)
     i=random.choice(list)
-    while i==button3 or i.setEnabled(False):
-        i=random.choice(list)
-    if i!=button3:
-        i.setText('o')
-        i.setEnabled(False)    
+    while i:
+            
+        if i==button3 or i==i.setEnabled(False):
+            i=random.choice(list)  
+             
+        if i!=button3 and i!=i.setEnabled(False):
+            i.setText('O')
+            i.setEnabled(False)
+            break
     print('click')
 
 def btnAction4():
-    
-    button4.setText('x')
+    btnList.append(button4)
+    button4.setText('X')
     button4.setEnabled(False)
     i=random.choice(list)
-    while i==button4 or i.setEnabled(False):
-        i=random.choice(list)
-    if i!=button4:
-        i.setText('o')
-        i.setEnabled(False)     
+    while i:
+       
+        if i==button4 or i==i.setEnabled(False):
+            i=random.choice(list)  
+        if i!=button4 and i!=i.setEnabled(False):
+            i.setText('O')
+            i.setEnabled(False)
+            break 
+            
+       
     print('click') 
 
 def btnAction5():
-    
-    button5.setText('x')
+    btnList.append(button5)
+    button5.setText('X')
     button5.setEnabled(False)
     i=random.choice(list)
-    while i==button5 or i.setEnabled(False):
-        i=random.choice(list)
-    if i!=button5:
-        i.setText('o')
-        i.setEnabled(False)     
+    while i:
+       
+        if i==button5 or i==i.setEnabled(False):
+            i=random.choice(list)  
+        if i!=button5 and i!=i.setEnabled(False):
+            i.setText('O')
+            i.setEnabled(False)
+            break   
+         
     print('click') 
 
 def btnAction6():
-    
-    button6.setText('x')
+    btnList.append(button6)
+    button6.setText('X')
     button6.setEnabled(False)
     i=random.choice(list)
-    while i==button6 or i.setEnabled(False):
-        i=random.choice(list)
-    if i!=button6:
-        i.setText('o')
-        i.setEnabled(False)   
+    while i:
+        
+        if i==button6 or i==i.setEnabled(False):
+            i=random.choice(list)  
+        if i!=button6 and i!=i.setEnabled(False):
+            i.setText('O')
+            i.setEnabled(False)
+            break  
     print('click') 
 
 def btnAction7():
-    
-    button7.setText('x')
+    btnList.append(button7)
+    button7.setText('X')
     button7.setEnabled(False)
     i=random.choice(list)
-    while i==button7 or i.setEnabled(False):
-        i=random.choice(list)
-    if i!=button7:
-        i.setText('o')
-        i.setEnabled(False) 
+    while i:
+        
+        if i==button7 or i==i.setEnabled(False):
+            i=random.choice(list)  
+        if i!=button7 and i!=i.setEnabled(False):
+            i.setText('O')
+            i.setEnabled(False)
+            break  
+        
+      
     print('click') 
     
 def btnAction8():
-    
-    button8.setText('x')
+    btnList.append(button8)
+    button8.setText('X')
     button8.setEnabled(False)
     i=random.choice(list)
-    while i==button8 or i.setEnabled(False):
-        i=random.choice(list)
-    if i!=button8:
-        i.setText('o')
-        i.setEnabled(False)   
+    while i:
+       
+        if i==button8 or i==i.setEnabled(False):
+            i=random.choice(list)  
+        if i!=button8 and i!=i.setEnabled(False):
+            i.setText('O')
+            i.setEnabled(False)
+            break 
     print('click')    
     
 def btnAction9():
-    
+    btnList.append(button9)
     button9.setText('x')
     button9.setEnabled(False)
     i=random.choice(list)
-    while i==button9 or i.setEnabled(False):
-        i=random.choice(list)
-    if i!=button9:
-        i.setText('o')
-        i.setEnabled(False)
-    
+    while i:
+        
+        if i==button9 or i==i.setEnabled(False):
+            i=random.choice(list)  
+            
+        if i!=button9 and i!=i.setEnabled(False):
+            i.setText('O')
+            i.setEnabled(False)
+            break 
     print('click')   
     
-    
+ 
 
     
 button1=QPushButton('',main)
@@ -131,6 +165,31 @@ button6=QPushButton('',main)
 button7=QPushButton('',main)
 button8=QPushButton('',main)
 button9=QPushButton('',main)
+
+#if 'button1' and 'button2' and 'button3' in btnList:
+    #print('Yes,X won')   
+ 
+#if 'button1' and 'button4' and 'button7' in btnList:
+    #print('YES, X won')    
+ 
+#if 'button2' and 'button5' and 'button8' in btnList:
+    #print('Yes,X won')   
+ 
+#if 'button3' and 'button6' and 'button9' in btnList:
+    #print('Yes,X won')   
+
+#if 'button4' and 'button5' and 'button6' in btnList:
+    #print('Yes,X won')   
+ 
+#if 'button7' and 'button8' and 'button9' in btnList:
+    #print('Yes,X won')   
+ 
+#if 'button1' and 'button5' and 'button9' in btnList:
+    #print('Yes,X won')   
+
+#if 'button3' and 'button5' and 'button7' in btnList:
+    #print('Yes,X won')       
+       
 
 
 button1.clicked.connect(btnAction)
@@ -144,11 +203,46 @@ button8.clicked.connect(btnAction8)
 button9.clicked.connect(btnAction9)
 
 
+cord123=[button1,button2,button3]
+cord147=[button1,button4,button7]
+cord258=[button2,button5,button8]
+cord369=[button3,button6,button9]
+cord456=[button4,button5,button6]
+cord789=[button7,button8,button9]
+cord159=[button1,button9,button9]
+cord357=[button3,button5,button9]
 
+check=all(items in btnList for items in cord123)
+if check is True:
+    print('Yes,x won')
 
+check=all(items in btnList for items in cord147)
+if check is True:
+    print('Yes,x won')
 
+check=all(items in btnList for items in cord258)
+if check is True:
+    print('Yes,x won')
+    
+check=all(item in btnList for item in cord369)
+if check is True:
+    print('Yes,x won')   
 
+check=all(items in btnList for items in cord456)
+if check is True:
+    print('Yes,x won')    
 
+check=all(items in btnList for items in cord789)
+if check is True:
+    print('Yes,x won')   
+    
+check=all(items in btnList for items in cord159)
+if check is True:
+    print('Yes,x won') 
+    
+check=all(items in btnList for items in cord357)
+if check is True:
+    print('Yes,x won') 
 button1.setGeometry(cellX,cellY,mainWidth/3,mainHeight/3)
 button2.setGeometry(0,200,mainWidth/3,mainHeight/3)
 button3.setGeometry(0,400,mainWidth/3,mainHeight/3)
@@ -162,9 +256,6 @@ button9.setGeometry(400,400,mainWidth/3,mainHeight/3)
 
 list=[ button1,button2, button3,button4,button5,button6,button7,button8,button9]
 
-  
-    
-       
 main.show()
 
 app.exec_() 
