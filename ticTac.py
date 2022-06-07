@@ -10,66 +10,89 @@ main.resize(600,800)
 cellX=0
 cellY=0
 btnList=[]
+clickCount=0
+light=True
 def btnAction():
     btnList.append(button1)
     button1.setText('X')
     button1.setEnabled(False)
+    list.remove(button1)
     i=random.choice(list)
-    while i:
+    
+    
+    if i!=button1 and i!=i.setEnabled(False):
+        i.setText('O')
+        i.setEnabled(False)
+        list.remove(i)
+            
+    if i==button1 or i==i.setEnabled(False):
+        i=random.choice(list)
         if i!=button1 and i!=i.setEnabled(False):
             i.setText('O')
             i.setEnabled(False)
-            break 
-        if i==button1 or i==i.setEnabled(False):
-            i=random.choice(list)  
+            list.remove(i)  
                 
      
-    print('click') 
+    print(list) 
 
 def btnAction2():
     btnList.append(button2)
     button2.setText('X')
     button2.setEnabled(False)
+    list.remove(button2)
     i=random.choice(list)
-    while i:
+    if i!=button2 and i!=i.setEnabled(False):
+        i.setText('O')
+        i.setEnabled(False)
+        list.remove(i)
        
-        if i==button2 or i==i.setEnabled(False):
-            i=random.choice(list)       
+    if i==button2 or i==i.setEnabled(False):
+        i=random.choice(list)       
         if i!=button2 and i!=i.setEnabled(False):
             i.setText('O')
             i.setEnabled(False)
-            break 
-    print('click') 
+            list.remove(i)
+           
+    print(list) 
     
 def btnAction3():
     btnList.append(button3)
     button3.setText('X')
     button3.setEnabled(False)
+    list.remove(button3)
     i=random.choice(list)
-    while i:
+    
             
-        if i==button3 or i==i.setEnabled(False):
-            i=random.choice(list)  
-             
+    if i==button3 or i==i.setEnabled(False):
+        i=random.choice(list)
         if i!=button3 and i!=i.setEnabled(False):
             i.setText('O')
             i.setEnabled(False)
-            break
+            list.remove(i)  
+             
+    if i!=button3 and i!=i.setEnabled(False):
+        i.setText('O')
+        i.setEnabled(False)
+        list.remove(i)
+          
     print('click')
 
 def btnAction4():
     btnList.append(button4)
     button4.setText('X')
     button4.setEnabled(False)
+    list.remove(button4)
     i=random.choice(list)
-    while i:
-       
-        if i==button4 or i==i.setEnabled(False):
-            i=random.choice(list)  
+    if i!=button4 and i!=i.setEnabled(False):
+        i.setText('O')
+        i.setEnabled(False)
+        list.remove(i)
+    if i==button4  or i==i.setEnabled(False):
+        i=random.choice(list)  
         if i!=button4 and i!=i.setEnabled(False):
             i.setText('O')
             i.setEnabled(False)
-            break 
+            list.remove(i)
             
        
     print('click') 
@@ -78,15 +101,18 @@ def btnAction5():
     btnList.append(button5)
     button5.setText('X')
     button5.setEnabled(False)
+    list.remove(button5)
     i=random.choice(list)
-    while i:
-       
-        if i==button5 or i==i.setEnabled(False):
-            i=random.choice(list)  
+    if i!=button5 and i!=i.setEnabled(False):
+        i.setText('O')
+        i.setEnabled(False)
+        list.remove(i)
+    if i==button5 or i==i.setEnabled(False):
+        i=random.choice(list)  
         if i!=button5 and i!=i.setEnabled(False):
             i.setText('O')
             i.setEnabled(False)
-            break   
+            list.remove(i)
          
     print('click') 
 
@@ -94,30 +120,38 @@ def btnAction6():
     btnList.append(button6)
     button6.setText('X')
     button6.setEnabled(False)
+    list.remove(button6)
     i=random.choice(list)
-    while i:
-        
-        if i==button6 or i==i.setEnabled(False):
-            i=random.choice(list)  
+    if i!=button6 and i!=i.setEnabled(False):
+        i.setText('O')
+        i.setEnabled(False)
+        list.remove(i)
+    if i==button6 or i==i.setEnabled(False):
+        i=random.choice(list)  
         if i!=button6 and i!=i.setEnabled(False):
             i.setText('O')
             i.setEnabled(False)
-            break  
+            list.remove(i)
     print('click') 
 
 def btnAction7():
     btnList.append(button7)
     button7.setText('X')
     button7.setEnabled(False)
+    list.remove(button7)
     i=random.choice(list)
-    while i:
+    if i!=button7 and i!=i.setEnabled(False):
+        i.setText('O')
+        i.setEnabled(False)
+        list.remove(i)
         
-        if i==button7 or i==i.setEnabled(False):
-            i=random.choice(list)  
+    if i==button7 or i==i.setEnabled(False):
+        i=random.choice(list)  
         if i!=button7 and i!=i.setEnabled(False):
             i.setText('O')
             i.setEnabled(False)
-            break  
+            list.remove(i)
+         
         
       
     print('click') 
@@ -126,35 +160,42 @@ def btnAction8():
     btnList.append(button8)
     button8.setText('X')
     button8.setEnabled(False)
+    list.remove(button8)
     i=random.choice(list)
-    while i:
+    if i!=button8 and i!=i.setEnabled(False):
+        i.setText('O')
+        i.setEnabled(False)
+        list.remove(i)
        
-        if i==button8 or i==i.setEnabled(False):
+    if i==button8 or i==i.setEnabled(False):
             i=random.choice(list)  
-        if i!=button8 and i!=i.setEnabled(False):
-            i.setText('O')
-            i.setEnabled(False)
-            break 
+            if i!=button8 and i!=i.setEnabled(False):
+                i.setText('O')
+                i.setEnabled(False)
+                list.remove(i)
+          
     print('click')    
     
 def btnAction9():
     btnList.append(button9)
     button9.setText('x')
     button9.setEnabled(False)
+    list.remove(button9)
     i=random.choice(list)
-    while i:
+    if i!=button9 and i!=i.setEnabled(False):
+        i.setText('O')
+        i.setEnabled(False)
+        list.remove(i)
         
-        if i==button9 or i==i.setEnabled(False):
-            i=random.choice(list)  
+    if i==button9 or i==i.setEnabled(False):
+        i=random.choice(list)  
             
         if i!=button9 and i!=i.setEnabled(False):
             i.setText('O')
             i.setEnabled(False)
-            break 
+            list.remove(i)
+             
     print('click')   
-    
- 
-
     
 button1=QPushButton('',main)
 button2=QPushButton('',main)
