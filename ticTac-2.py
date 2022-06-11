@@ -22,14 +22,12 @@ class Tictacbtn(QPushButton):
         self.clicked.connect(self.clickFunk)
         self.clickCount=0
         self.currentWindow=None
-        self.clicked.connect(self.Begin)
+        
         self.coord={
             'x':0,
             'y':0
         }
-    def Begin(self):
-        self.currentWindow=Main()
-        self.currentWindow.show()   
+      
     def clickFunk(self):
         global clickCount
         global light,xCount
@@ -44,13 +42,15 @@ class Tictacbtn(QPushButton):
                 self.setText('O')
                 self.setStyleSheet('background-color:#f70776')
                 light=True
-        
+    
         for btn in allbtns:
             
             if btn.coord['x']==1:
                 if btn.text()=='X':
-                    xCount+=1
-                                        
+                   
+   
+                    self.currentWindow=Main()
+                    self.currentWindow.show()                                    
         
     def defineCoordinate(self,x,y):
         self.coord['x']=x
@@ -63,6 +63,7 @@ for setir in range(3):
         btn.setGeometry(xPos,yPos,w/3,h/3)
         btn.defineCoordinate(setir,sutun)
         allbtns.append(btn)
+        
         xPos+=200
     xPos=0   
     yPos+=200

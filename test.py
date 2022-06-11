@@ -5,13 +5,13 @@ w=400
 h=300
 
 
-app=QApplication()
+
 Main=QWidget()
 Main.resize(w,h)
 Main.setStyleSheet('background-color:#f8f398')
 
-title=QLabel(" Do you want to play again?",Main)
-title.setGeometry(40,50,300,30)
+title=QLabel(" Congratulations! You Won /n Do you want to play again?",Main)
+title.setGeometry(40,50,400,30)
 title.setStyleSheet('font-size:23px; ')
 
 YesBtn=QPushButton('Yes',Main)
@@ -29,4 +29,4 @@ NoBtn.setStyleSheet('background-color:green ;font-size:20px;')
     
             
 Main.show()
-app.exec_()
+
