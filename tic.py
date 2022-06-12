@@ -1,7 +1,9 @@
+
 from PySide6.QtWidgets import *
 from PySide6.QtGui import*
 import random
-from test import*
+from test import *
+
 w=600
 h=600
 allbtns=[]
@@ -11,12 +13,26 @@ yPos=0
 light=True
 clickCount=0
 xCount=0
-
 app=QApplication()
-main=QMainWindow()
 
-main.resize(w,h)   
+class main(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.currentWindow=None
+        self.resize(600,600)
+        for btn in allbtns:
+            if btn.coord['x']==1:
+                if btn.text()=='X':
+                    self.newwin()
+        
 
+    def newwin(self):
+        self.currentWindow=secondWind()
+        self.currentWindow.show()
+
+        
+        
+        
 class Tictacbtn(QPushButton):
     def __init__(self,*args):
         QPushButton.__init__(self,*args)
@@ -42,12 +58,7 @@ class Tictacbtn(QPushButton):
             else:
                 self.setText('O')
                 self.setStyleSheet('background-color:#f70776')
-                light=True 
-        for btn in allbtns:
-            if btn.coord['x']==1:
-                if btn.text()=='X':
-                    secondWind.show()
-        
+                light=True
                 
                                            
         
@@ -55,22 +66,27 @@ class Tictacbtn(QPushButton):
         self.coord['x']=x
         self.coord['y']=y
     
-       
-                    
-            
-             
 for setir in range(3):
     for sutun in range(3):
         btn=Tictacbtn('',main)
         btn.setGeometry(xPos,yPos,w/3,h/3)
         btn.defineCoordinate(setir,sutun)
-       
+            
         allbtns.append(btn)
-                        
+        
+        
+                                
         xPos+=200
     xPos=0   
-    yPos+=200
+    yPos+=200       
+                                          
+
+        
 
 
-main.show()
+
+
+
+Main=main()
+Main.show()
 app.exec_()
